@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- APP ICON -->
-<img src="icon_preview.png" width="128" alt="Rt:Terminal I.D. App Icon">
+<img src="icon.png" width="128" alt="Rt:Terminal I.D. App Icon">
 
 # ⚡ Rt:Terminal I.D.
 ### *RetroFW 2.3 Terminal Emulator*
