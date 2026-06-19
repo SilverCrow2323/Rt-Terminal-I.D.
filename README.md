@@ -411,7 +411,7 @@ rt_terminal_id_v4/
 **with the participation of: Minoru^7** — RI (pain in the a**) Protocol
 
 <!-- RSPDW LOGO -->
-<img src="rspdw.png" width="300" alt="RSPDW Chou Henka Project">
+<img src="RetroFW.png" width="300" alt="RSPDW Chou Henka Project">
 
 *Part of the **RSPDW Chou Henka Project***
 
