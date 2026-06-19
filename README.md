@@ -176,7 +176,7 @@ rt_terminal_id_v4/
 
 | Issue | Solution |
 |-------|----------|
-| `ImportError: No module named pygame` | Install pygame: `opkg install python-pygame` |
+| Crash and errors | Check the log file in /home/retrofw/rspdw_lab/black_box` |
 | Font won't load | Check `.ttf` is in `fonts/` folder |
 | Corrupted JSON | Delete `rt_tid.json`, it will be recreated with defaults |
 | Commands won't execute | Check shell permissions (`chmod +x main.py`) |
@@ -205,7 +205,7 @@ rt_terminal_id_v4/
 - Multi-session
 - Command almanac
 
----
+_______________________________________________________________________________________________
 
 ## 🇮🇹 ITALIANO
 
@@ -363,7 +363,7 @@ rt_terminal_id_v4/
 
 | Problema | Soluzione |
 |----------|-----------|
-| `ImportError: No module named pygame` | Installa pygame: `opkg install python-pygame` |
+| Crash o errori | Controlla file Log in /home/retrofw/rspdw_lab/black_box` |
 | Font non carica | Verifica che il file `.ttf` sia in `fonts/` |
 | JSON corrotto | Cancella `rt_tid.json`, verrà ricreato con default |
 | Comandi non eseguono | Verifica permessi shell (`chmod +x main.py`) |
