@@ -1,0 +1,163 @@
+================================================================================
+  Rt:Terminal I.D. v4.0 — User Manual / Manuale Utente
+  SPDW Factory — RSPDW Chou Henka Project
+================================================================================
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                              🇬🇧  ENGLISH                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+CONTROLS
+--------
+  DPAD        Navigate virtual keyboard / menu / almanac
+  A (CTRL)    Select / Confirm / Execute command
+  B (ALT)     Backspace / Cancel / Close window
+  Y (SHIFT)   Hold + UP/DOWN = Scroll log history
+              Tap = Toggle on-screen keyboard visibility
+  X (S)       Edit user command (when in Almanac)
+  L (TAB)     Cycle through Almanac commands
+  R (BKSP)    Change keyboard layout (abc / ABC / sym)
+  START       Open options menu
+  SELECT      Exit application
+
+MENU OPTIONS
+------------
+  Session          — Switch between active terminal sessions
+  New Session      — Create a new shell session
+  Log Size         — Adjust font size (11-15pt)
+  Print Width      — Adjust terminal width (150-316px)
+  Theme            — Choose from 6 color themes
+  Language         — Switch between IT / EN
+  Command Almanac  — Browse commands (A=run, Y=delete, X=edit)
+  Save Command     — Add a new custom command to JSON
+  Load Font        — Select a custom TTF font
+  About            — Credits and version info
+  Close Menu       — Return to terminal
+
+SAVING COMMANDS
+---------------
+From the menu, select "Save Command" to add a new custom command.
+Fill in:
+  • Name        — Display name in the Almanac
+  • Description — Optional info text
+  • Command     — The actual shell command to execute
+
+Press A to save. The command is stored in rt_tid.json and appears
+in the Almanac with a * marker.
+
+EDITING COMMANDS
+----------------
+In the Almanac, navigate to a user command (marked with *) and
+press X to edit it. Modify the fields and press A to save changes.
+
+DELETING COMMANDS
+-----------------
+In the Almanac, navigate to a user command and press Y to delete it.
+System commands cannot be deleted.
+
+JSON FILE
+---------
+Custom commands and configuration are stored in:
+  /home/retrofw/.rspdw/rt_terminal/rt_tid.json
+
+Configuration (theme, font, language, width) is saved automatically
+whenever you change a setting.
+
+CUSTOM FONTS
+------------
+Place .ttf files in the fonts/ directory. They will appear in the
+"Load Font" menu.
+
+TROUBLESHOOTING
+---------------
+  Black screen       → Check SDL vars: unset SDL_VIDEODRIVER
+  Commands fail      → Check permissions: chmod +x main.py
+  Font won't load    → Verify .ttf is in fonts/ folder
+  JSON error         → Delete rt_tid.json, it will be recreated
+  No pygame module   → Install: opkg install python-pygame
+
+═══════════════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                              🇮🇹  ITALIANO                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+CONTROLLI
+---------
+  DPAD        Naviga tastiera virtuale / menu / almanacco
+  A (CTRL)    Seleziona / Conferma / Esegui comando
+  B (ALT)     Backspace / Annulla / Chiudi finestra
+  Y (SHIFT)   Tieni premuto + SU/GIU = Scroll log
+              Tocca breve = Mostra/nascondi tastiera virtuale
+  X (S)       Modifica comando utente (nell'Almanacco)
+  L (TAB)     Scorri comandi dell'Almanacco
+  R (BKSP)    Cambia layout tastiera (abc / ABC / sim)
+  START       Apri menu opzioni
+  SELECT      Esci dall'applicazione
+
+OPZIONI MENU
+------------
+  Sessione          — Cambia sessione terminale attiva
+  Nuova Sessione    — Crea nuova sessione shell
+  Dimensione Log    — Regola dimensione font (11-15pt)
+  Larghezza Area    — Regola larghezza terminale (150-316px)
+  Tema              — Scegli tra 6 temi colorati
+  Lingua            — Passa da IT a EN
+  Almanacco Comandi — Lista comandi (A=esegui, Y=elimina, X=modifica)
+  Salva Comando     — Aggiungi comando personalizzato al JSON
+  Carica Font       — Seleziona font TTF personalizzato
+  Informazioni      — Crediti e info versione
+  Chiudi Menu       — Torna al terminale
+
+SALVATAGGIO COMANDI
+-------------------
+Dal menu, seleziona "Salva Comando" per aggiungere un nuovo comando.
+Compila:
+  • Nome        — Nome visualizzato nell'Almanacco
+  • Descrizione — Testo informativo opzionale
+  • Comando     — Il comando shell da eseguire
+
+Premi A per salvare. Il comando viene memorizzato in rt_tid.json e
+appare nell'Almanacco con il simbolo *.
+
+MODIFICA COMANDI
+----------------
+Nell'Almanacco, naviga su un comando utente (contrassegnato da *) e
+premi X per modificarlo. Modifica i campi e premi A per salvare.
+
+ELIMINAZIONE COMANDI
+--------------------
+Nell'Almanacco, naviga su un comando utente e premi Y per eliminarlo.
+I comandi di sistema non possono essere eliminati.
+
+FILE JSON
+---------
+I comandi personalizzati e la configurazione sono salvati in:
+  /home/retrofw/.rspdw/rt_terminal/rt_tid.json
+
+La configurazione (tema, font, lingua, larghezza) viene salvata
+automaticamente ad ogni modifica.
+
+FONT PERSONALIZZATI
+-------------------
+Inserisci file .ttf nella cartella fonts/. Appariranno nel menu
+"Carica Font".
+
+RISOLUZIONE PROBLEMI
+--------------------
+  Schermo nero       → Controlla variabili SDL: unset SDL_VIDEODRIVER
+  Comandi falliscono → Controlla permessi: chmod +x main.py
+  Font non carica    → Verifica .ttf sia in fonts/
+  Errore JSON        → Cancella rt_tid.json, verrà ricreato
+  Manca pygame       → Installa: opkg install python-pygame
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTACTS / CONTATTI
+-------------------
+  SPDW Factory — Sector G
+  RSPDW Chou Henka Project
+  RetroFW 2.3 Compatible
+
+  "Sbrobs!"
+================================================================================
