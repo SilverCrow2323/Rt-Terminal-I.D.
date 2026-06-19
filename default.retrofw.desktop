@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Rt:Terminal I.D.
+Comment=RSPDW Module
+Exec=launcher.sh
+Icon=icon
+Categories=applications
+Terminal=false

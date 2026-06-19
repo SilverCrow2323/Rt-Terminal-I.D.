@@ -1,0 +1,109 @@
+{
+    "theme": "Cyan Neo",
+    "font_size": 13,
+    "language": "IT",
+    "font_file": "default",
+    "print_width": 308,
+    "almanacco": [
+        {
+            "name": "[SYS] RAW DIRECTORY EVISCERATION",
+            "description": "Lista dettagliata con flag e colori",
+            "cmd": "ls -laF --color=always"
+        },
+        {
+            "name": "[SYS] CRITICAL STORAGE INSPECTION",
+            "description": "Spazio disco e check errori",
+            "cmd": "df -h && echo 'Check complete'"
+        },
+        {
+            "name": "[SYS] HARDWARE AGONY MONITOR",
+            "description": "Monitoraggio CPU e processi in tempo reale",
+            "cmd": "top -d 1"
+        },
+        {
+            "name": "[SYS] RAM BEGGING PROTOCOL",
+            "description": "Stato memoria e statistiche VM",
+            "cmd": "free -m && vmstat 1 3"
+        },
+        {
+            "name": "[SYS] ZOMBIE PROCESS TREE",
+            "description": "Albero processi completo",
+            "cmd": "ps auxwwwf || ps w"
+        },
+        {
+            "name": "[SYS] KERNEL INSULT LOGS",
+            "description": "Ultimi 25 messaggi del kernel",
+            "cmd": "dmesg | tail -n 25"
+        },
+        {
+            "name": "[SYS] ANCIENT ARCHITECTURE IDENT",
+            "description": "Info CPU e architettura",
+            "cmd": "uname -a && lscpu 2>/dev/null || cat /proc/cpuinfo"
+        },
+        {
+            "name": "[SYS] ISOLATED NET INTERFACES",
+            "description": "Interfacce di rete e routing",
+            "cmd": "ifconfig -a && netstat -r"
+        },
+        {
+            "name": "[SYS] FOLDER TRASH WEIGHT",
+            "description": "Dimensione cartelle ordinate",
+            "cmd": "du -sh ./* 2>/dev/null | sort -hr"
+        },
+        {
+            "name": "[SYS] OPEN FILE DESCRIPTORS",
+            "description": "File aperti e connessioni",
+            "cmd": "lsof -i 2>/dev/null || lsof +D ."
+        },
+        {
+            "name": "[SYS] ENVIRONMENT MUTATION DUMP",
+            "description": "Variabili d'ambiente ordinate",
+            "cmd": "printenv | sort"
+        },
+        {
+            "name": "[SYS] MOUNTED PARTITION VOMIT",
+            "description": "Partizioni montate",
+            "cmd": "mount | column -t"
+        },
+        {
+            "name": "[KILL] TOTAL PYTHON EXECUTION",
+            "description": "Termina tutti i processi Python",
+            "cmd": "killall -9 python python2 python2.7 2>/dev/null"
+        },
+        {
+            "name": "[KILL] BRUTAL PROCESS MURDER",
+            "description": "Kill di tutti i processi utente",
+            "cmd": "kill -9 $(ps | grep -v grep | awk '{print $1}') 2>/dev/null"
+        },
+        {
+            "name": "[CACHE] VIOLENT MEMORY PURGE",
+            "description": "Svuota cache e buffer",
+            "cmd": "sync && echo 3 > /proc/sys/vm/drop_caches 2>/dev/null && free -m"
+        },
+        {
+            "name": "[SANDBOX] LOST HUMAN RESET",
+            "description": "Torna alla home e mostra path",
+            "cmd": "cd /home/retrofw && pwd"
+        },
+        {
+            "name": "[MOD] PERMISSIVE CHMOD OVERKILL",
+            "description": "Chmod 777 ricorsivo (ATTENZIONE!)",
+            "cmd": "chmod -R 777 ./* 2>/dev/null && ls -l"
+        },
+        {
+            "name": "[SHUTDOWN] THERMAL DEATH SEQUENCE",
+            "description": "Spegnimento sicuro",
+            "cmd": "sync && poweroff"
+        },
+        {
+            "name": "[REBOOT] UNIVERSE BETA REINSTANTIATION",
+            "description": "Riavvio del sistema",
+            "cmd": "sync && reboot"
+        },
+        {
+            "name": "[DEBUG] MINORU CORE REBOOT",
+            "description": "Riavvia il terminale stesso",
+            "cmd": "echo 'Sbrobs!' && pkill -f main.py"
+        }
+    ]
+}
